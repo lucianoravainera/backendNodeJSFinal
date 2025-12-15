@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(cors());
 
 app.get("/", (req, res) => {
-  res.json({ message: "Productos APIrest V" + process.env.version + " .Luciano Ravainera" });
+  res.json({ message: "Productos APIrest V" + process.env.VERSION + " .Luciano Ravainera" });
 });
 
  app.use("/auth", authRouter);
